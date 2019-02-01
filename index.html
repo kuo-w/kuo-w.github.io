@@ -13,27 +13,37 @@
       href="https://fonts.googleapis.com/css?family=Raleway"
       rel="stylesheet"
     />
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
-      crossorigin="anonymous"
-    ></script>
+    <script src="jquery-3.3.1.min.js"></script>
+    <script src="script.js"></script>
   </head>
   <body>
-    <header>
-      <div class="header__upper"><h1>William Kuo</h1></div>
-      <div class="header__lower">
-        <div class="contact" id="contact">
-          <a href="https://github.com/kuo-w">Github</a>
-          <a href="https://www.linkedin.com/in/william-kuo/">LinkedIn</a>
-          <a href="mailto:william.k.kuo@gmail.com">E-mail</a>
-          <a href="WilliamKuo_Resume.pdf">Resume</a>
+    <div class="container">
+      <section class="main">
+        <div class="contact">
+          <h1>William Kuo</h1>
+          <div class="contact__links" id="contact">
+            <a class="contact__link" href="https://github.com/kuo-w">
+              Github
+            </a>
+            <a
+              class="contact__link"
+              href="https://www.linkedin.com/in/william-kuo/"
+            >
+              LinkedIn
+            </a>
+            <a class="contact__link" href="mailto:william.k.kuo@gmail.com">
+              E-mail
+            </a>
+            <a class="contact__link" href="WilliamKuo_Resume.pdf"> Resume </a>
+          </div>
+          <div class="reveals">
+            <button class="reveal" id="btn-experience">Experience</button>
+            <button class="reveal" id="btn-projects">Projects</button>
+          </div>
         </div>
-      </div>
-    </header>
-    <section class="container">
-      <div class="content">
-        <div id="about" class="block">
+      </section>
+      <section class="content">
+        <div id="about" class="block" hidden>
           <h3 class="block__title">About Me</h3>
           <div class="block__item">
             <h2>Education</h2>
@@ -41,7 +51,7 @@
             <p>Graduating April 2020.</p>
           </div>
         </div>
-        <div id="experience" class="block">
+        <div id="experience" class="block" hidden>
           <h3 class="block__title">Experience</h3>
           <div class="block__item">
             <h2>
@@ -67,7 +77,7 @@
             </h4>
           </div>
         </div>
-        <div id="projects" class="block">
+        <div id="projects" class="block" hidden>
           <h3 class="block__title">Projects</h3>
           <div class="block__item">
             <h2>
@@ -88,7 +98,7 @@
             <p>Daily web crawler to text my order position in queue.</p>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
   </body>
 </html>
