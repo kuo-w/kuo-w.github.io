@@ -1,19 +1,22 @@
-const SECTIONS = ["experience", "projects"];
+const SECTIONS = ["about", "experience", "projects"];
 
 document.addEventListener("DOMContentLoaded", function() {
   SECTIONS.forEach(section => {
     document.getElementById(`btn-${section}`).addEventListener(
       "click",
-      e => {
-        const section = e.target.id.split("btn-")[1];
-        toggleSectionsVisibility(section);
+      element => {
+        const sectionName = element.target.id.split("btn-")[1];
+        const $section = $(`#${sectionName}`);
+        if ($section.is(":hidden")) {
+          $section.insertAfter("#blocks");
+        }
+        toggleSectionsVisibility($section);
       },
       false
     );
   });
 
-  function toggleSectionsVisibility(selectedSection) {
-    const $section = $(`#${selectedSection}`);
+  function toggleSectionsVisibility($section) {
     if ($section.is(":hidden")) {
       $section.slideDown("slow");
     } else {
