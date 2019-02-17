@@ -8,6 +8,7 @@
     "dev": "parcel index.html",
     "watch": "parcel watch index.html"
   },
+  "prebuild": "rm -rf dist/*",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/kuo-w/kuo-w.github.io.git"
