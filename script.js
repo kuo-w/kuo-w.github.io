@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function() {
         const sectionName = element.target.id.split("btn-")[1];
         const $section = $(`#${sectionName}`);
         if ($section.is(":hidden")) {
-          $section.insertAfter("#blocks");
+          $section.prependTo($('#blocks'));
         }
         toggleSectionsVisibility($section);
       },

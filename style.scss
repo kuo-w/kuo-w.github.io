@@ -1,3 +1,5 @@
+$small: "only screen and (max-width: 600px)";
+
 :root {
   --primary: #8c9eff;
   --primary-light: #c0cfff;
@@ -14,6 +16,7 @@
 
 html {
   height: 100vh;
+  font-size: 18px;
 }
 
 body {
@@ -81,20 +84,31 @@ p {
 }
 
 .container {
-  padding: 0 20%;
+  padding: 0 20% 10% 20%;
+
+  @media #{$small} {
+    font-size: 16px;
+    padding: 0 10% 10% 10%;
+  }
 }
 
 .main {
   padding-bottom: 50px;
+  padding-left: 20px;
   width: 100%;
+
+  @media #{$small} {
+    padding-left: 0;
+  }
 }
 
 .reveals {
   display: inline-flex;
+  margin-top: 10px;
 }
 
 .reveal {
-  margin-right: 10px;
+  margin-right: 18px;
 }
 
 .contact {
@@ -107,11 +121,13 @@ p {
 }
 
 .contact__links {
-  margin-bottom: 5px;
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: nowrap;
 }
 
 .contact__link {
-  margin-right: 10px;
+  margin-right: 18px;
 }
 
 .resume-btn {
@@ -127,8 +143,13 @@ p {
 }
 
 .block {
+  font-size: 1rem;
   padding: 50px 80px;
   background-color: var(--grey-light);
+
+  @media #{$small} {
+    padding: 30px 50px;
+  }
 }
 
 .block:last-child {
@@ -150,15 +171,4 @@ p {
 
 .duration {
   font-size: 0.6em;
-}
-
-@media only screen and (max-width: 600px) {
-  .container {
-    font-size: 14px;
-    padding: 0 10%;
-  }
-
-  .block {
-    padding: 30px 50px;
-  }
 }
