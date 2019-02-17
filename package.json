@@ -1,0 +1,32 @@
+{
+  "name": "kuo-w.github.io",
+  "version": "1.0.0",
+  "description": "Portfolio site",
+  "main": "index.html",
+  "scripts": {
+    "build": "parcel build index.html --public-url ./",
+    "dev": "parcel index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kuo-w/kuo-w.github.io.git"
+  },
+  "keywords": [
+    "William Kuo"
+  ],
+  "author": "William Kuo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kuo-w/kuo-w.github.io/issues"
+  },
+  "homepage": "https://github.com/kuo-w/kuo-w.github.io#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "jquery": "^3.3.1",
+    "parcel-bundler": "^1.11.0",
+    "parcel-plugin-clean-easy": "^1.0.2"
+  },
+  "parcelCleanPaths": [
+    "dist/*.*"
+  ]
+}
