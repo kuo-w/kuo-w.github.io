@@ -1,3 +1,5 @@
+window.$ = require("jquery");
+
 const SECTIONS = ["about", "experience", "projects"];
 
 document.addEventListener("DOMContentLoaded", function() {
