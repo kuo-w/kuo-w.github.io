@@ -7,13 +7,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>William Kuo</title>
-    <link rel="stylesheet" href="minimalcssreset.css" />
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-135080165-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "UA-135080165-1");
+    </script>
+
+    <!-- Main CSS -->
     <link rel="stylesheet" href="style.scss" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Raleway"
-      rel="stylesheet"
-    />
-    <script defer src="script.js"></script>
+
+    <!-- Main Script -->
+    <script src="script.js"></script>
   </head>
   <body>
     <div class="container">
@@ -21,19 +34,35 @@
         <div class="contact">
           <h1>William Kuo</h1>
           <div class="contact__links" id="contact">
-            <a class="contact__link" href="https://github.com/kuo-w">
+            <a
+              class="contact__link"
+              id="contact--github"
+              href="https://github.com/kuo-w"
+            >
               Github
             </a>
             <a
               class="contact__link"
+              id="contact--linkedin"
               href="https://www.linkedin.com/in/william-kuo/"
             >
               LinkedIn
             </a>
-            <a class="contact__link" href="mailto:william.k.kuo@gmail.com">
+            <a
+              class="contact__link"
+              id="contact--email"
+              href="mailto:william.k.kuo@gmail.com"
+            >
               E-mail
             </a>
-            <a class="contact__link" href="WilliamKuo_Resume.pdf"> Resume </a>
+
+            <a
+              class="contact__link"
+              id="contact--resume"
+              href="WilliamKuo_Resume.pdf"
+            >
+              Resume
+            </a>
           </div>
           <div class="reveals">
             <button class="reveal" id="btn-about">About</button>
