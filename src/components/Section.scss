@@ -1,0 +1,47 @@
+@import "../variables.scss";
+
+.Section {
+  margin-bottom: 20px;
+}
+
+.Section-content {
+  font-size: 1rem;
+  padding: 50px 80px;
+  background: var(--grey-light);
+
+  @media #{$small} {
+    padding: 10px 20px;
+  }
+}
+
+.Section-title {
+  color: var(--font-clr-lighter);
+  margin-bottom: 20px;
+}
+
+.Block-subtitle {
+  margin-bottom: 10px;
+}
+
+.Block:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.Block-semesters {
+  font-size: 0.6em;
+}
+
+.Block-header {
+  @media #{$medium} {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.Block-title {
+  margin-right: 12px;
+}
+
+.Block-description {
+  margin: 10px 0;
+}

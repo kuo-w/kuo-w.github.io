@@ -7,8 +7,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>William Kuo</title>
+    <style>
+      @import url("https://rsms.me/inter/inter.css");
+      html {
+        font-family: "Inter", sans-serif;
+      }
+      @supports (font-variation-settings: normal) {
+        html {
+          font-family: "Inter var", sans-serif;
+        }
+      }
+    </style>
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
     <script
       async
       src="https://www.googletagmanager.com/gtag/js?id=UA-135080165-1"
@@ -21,113 +31,9 @@
       gtag("js", new Date());
       gtag("config", "UA-135080165-1");
     </script>
-
-    <!-- Main CSS -->
-    <link rel="stylesheet" href="style.scss" />
-
-    <!-- Main Script -->
-    <script src="script.js"></script>
   </head>
   <body>
-    <div class="container">
-      <section class="main">
-        <div class="contact">
-          <h1>William Kuo</h1>
-          <div class="contact__links" id="contact">
-            <a
-              class="contact__link"
-              id="contact--github"
-              href="https://github.com/kuo-w"
-            >
-              Github
-            </a>
-            <a
-              class="contact__link"
-              id="contact--linkedin"
-              href="https://www.linkedin.com/in/william-kuo/"
-            >
-              LinkedIn
-            </a>
-            <a
-              class="contact__link"
-              id="contact--email"
-              href="mailto:william.k.kuo@gmail.com"
-            >
-              E-mail
-            </a>
-
-            <a
-              class="contact__link"
-              id="contact--resume"
-              href="WilliamKuo_Resume.pdf"
-            >
-              Resume
-            </a>
-          </div>
-          <div class="reveals">
-            <button class="reveal" id="btn-about">About</button>
-            <button class="reveal" id="btn-experience">Experience</button>
-            <button class="reveal" id="btn-projects">Projects</button>
-          </div>
-        </div>
-      </section>
-      <section id="blocks" class="content">
-        <div id="about" class="block" hidden>
-          <h3 class="block__title">About Me</h3>
-          <div class="block__item">
-            <h2>Education</h2>
-            <p>Ryerson University Computer Science Co-op.</p>
-            <p>Graduating April 2020.</p>
-          </div>
-        </div>
-        <div id="experience" class="block" hidden>
-          <h3 class="block__title">Experience</h3>
-          <div class="block__item">
-            <h2>
-              <a href="https://www.blackberry.com/ca/en">BlackBerry</a>
-              <span class="duration">W2019 S2019</span>
-            </h2>
-            <h4 class="block__subtitle">Software Development Student</h4>
-          </div>
-          <div class="block__item">
-            <h2>
-              <a href="https://www.shopperarmy.ca/">Shopper Army</a>
-              <span class="duration">S2018 F2018</span>
-            </h2>
-            <h4 class="block__subtitle">Full-Stack Web Developer</h4>
-          </div>
-          <div class="block__item">
-            <h2>
-              <a href="https://www.partech.com/">Partech Inc.</a>
-              <span class="duration">S2017 F2017 W2018</span>
-            </h2>
-            <h4 class="block__subtitle" class="item__subheader">
-              Full-Stack Software Developer
-            </h4>
-          </div>
-        </div>
-        <div id="projects" class="block" hidden>
-          <h3 class="block__title">Projects</h3>
-          <div class="block__item">
-            <h2>
-              <a href="https://github.com/kuo-w/Jot"> Journal </a>
-              <span class="duration">S2018</span>
-            </h2>
-            <h4 class="block__subtitle">React Native App</h4>
-            <p>A simple journaling mobile app.</p>
-          </div>
-          <div class="block__item">
-            <h2>
-              <a href="https://github.com/kuo-w/OLKB-Order-Checker">
-                Order Checker
-              </a>
-              <span class="duration">S2018</span>
-            </h2>
-            <h4 class="block__subtitle">Web Crawler Cron</h4>
-            <p>Daily web crawler to text my order position in queue.</p>
-          </div>
-        </div>
-      </section>
-    </div>
+    <div id="root"></div>
+    <script src="index.js"></script>
   </body>
 </html>

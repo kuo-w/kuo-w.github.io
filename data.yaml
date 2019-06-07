@@ -1,0 +1,81 @@
+contacts:
+  - title: Github
+    link: "https://github.com/kuo-w"
+  - title: LinkedIn
+    link: "https://www.linkedin.com/in/william-kuo/"
+  - title: "E-mail"
+    link: "mailto:william.k.kuo@gmail.com"
+  - title: "Resume"
+
+sections:
+  - section: About Me
+    blocks:
+      - title: Education
+        description:
+          - Ryerson University Computer Science Co-op.
+          - Graduating April 2020.
+      - title: Technical
+        description:
+          - "Languages: Javascript, Ruby, Python, Golang, C, Java, SQL"
+          - "Libraries/Frameworks: Rails, Django, React (+Native), Vue.js, jQuery"
+          - "Tools: Git, AWS, GCP, Docker, Elasticsearch, Node.js, Bash, Linux"
+  - section: Experience
+    blocks:
+      - title: Blackberry
+        subtitle: Software Development Student
+        link: "https://www.blackberry.com/ca/en"
+        semesters:
+          - W2019
+          - S2019
+        description:
+          - Ruby on Rails, Javascript, Elasticsearch, Redis
+      - title: Shopper Army
+        subtitle: Full-stack Web Developer
+        link: "https://www.shopperarmy.ca/"
+        semesters:
+          - S2018
+          - F2018
+        description:
+          - Vue.js, Django, Webpack, GCP
+      - title: Partech Inc.
+        subtitle: Full-stack Software Developer
+        link: "https://www.partech.com/"
+        semesters:
+          - S2017
+          - F2017
+          - W2018
+        description:
+          - Dropwizard (Java), AWS, Jenkins, AngularJs
+  - section: Projects
+    blocks:
+      - title: Personal Site
+        subtitle: Pre-rendered React Site
+        link: "https://github.com/kuo-w/kuo-w.github.io"
+        semesters:
+          - S2019
+        description:
+          - Initially written in jQuery and then with React.
+          - >
+            React-snap is used to pre-render the site so the client
+            doesn't wait for React to render.
+      - title: Journal
+        subtitle: React Native App
+        link: "https://github.com/kuo-w/Jot"
+        semesters:
+          - S2018
+        description:
+          - A journaling mobile application.
+          - Bootstrapped with `Create React Native App`.
+          - Added navigation, gesture handling, and local storage as database.
+      - title: Order Checker
+        subtitle: Web Crawler Cron
+        link: "https://github.com/kuo-w/OLKB-Order-Checker"
+        semesters:
+          - S2018
+        description:
+          - >
+            I purchased an item which enqueued me in a shipment queue, 
+            of which the expected shipment was months out.
+          - Luckily, the business owner published the shipment queue on a webpage.
+          - I deployed a CRON on Google Cloud Functions which crawled the webpage daily and looked for my particular order.
+          - Using Twilio, I then sent a text to my phone reporting my position in queue.

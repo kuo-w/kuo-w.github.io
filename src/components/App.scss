@@ -1,0 +1,20 @@
+@import "../variables.scss";
+@import "../../node_modules/react-slidedown/lib/slidedown.css";
+
+.App {
+  margin-top: 5%;
+  padding: 0 20% 10% 20%;
+
+  @media #{$small} {
+    font-size: 16px;
+    padding: 0 10% 10% 10%;
+  }
+}
+
+.App-contacts {
+  margin: 16px 0 24px 0;
+}
+
+.App-sections {
+  max-width: 700px;
+}
