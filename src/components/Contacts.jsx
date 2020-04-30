@@ -1,8 +1,8 @@
 import React from "react";
 import "./Contacts.scss";
-import Resume from "../assets/WilliamKuo_Resume.pdf";
+import PropTypes from "prop-types";
 
-const Contacts = props => {
+const Contacts = (props) => {
   const contacts = props.data;
 
   return (
@@ -13,8 +13,10 @@ const Contacts = props => {
             <a
               key={title}
               className="Contact"
-              href={title == "Resume" ? Resume : link}
-              target="_blank">
+              href={link}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               {title}
             </a>
           );
@@ -22,6 +24,10 @@ const Contacts = props => {
       </div>
     </div>
   );
+};
+
+Contacts.propTypes = {
+  data: PropTypes.array,
 };
 
 export default Contacts;

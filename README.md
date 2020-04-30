@@ -6,25 +6,36 @@ Pre-rendered React website for Github User page.
 
 #### Requirements
 
-- [NPM](https://www.npmjs.com/)
+- [npm](https://www.npmjs.com/)
 
 #### Development
 
-Install with `npm install`
+Data is sourced from `data.yaml`.
 
-Run with `npm run dev`
+The app reads this in and renders the corresponding components.
 
-Navigate to [localhost:1234](http://localhost:1234) in browser to view
+#### Web Server
+
+Install with `npm install`.
+
+Run with `npm run dev`.
+
+Navigate to [localhost:1234](http://localhost:1234) in browser to view.
 
 #### Deployment
 
-`npm run build` to build to folder `dist` then `npm run deploy` to deploy `dist` to branch `master`
+Deploy the application as static HTML by pre-rendering with `React-snap` and deploying to GitHub using `gh-pages`. 
+
+`npm run build` to build to folder `dist`. The `prebuild` step and `postbuild` step will run automatically.
+
+Deploy with `npm run deploy` to deploy `dist` to remote `master` branch.
 
 ## Built With
 
 - [Parcel](https://parceljs.org/) - Web Application Bundler
 - [React](https://reactjs.org/) - A JavaScript library for building user interfaces
 - [React Snap](https://github.com/stereobooster/react-snap) - Pre-renders a web app into static HTML
+- [gh-pages](https://github.com/tschaub/gh-pages) - Publish files to a GitHub branch
 
 ## License
 

@@ -17,7 +17,9 @@ const App = () => {
       </div>
       <div className="App-sections">
         {sectionsData &&
-          sectionsData.map(data => <Section key={data.section} data={data} />)}
+          sectionsData.map((data) => (
+            <Section key={data.section} data={data} />
+          ))}
       </div>
     </div>
   );

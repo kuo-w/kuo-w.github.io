@@ -6,76 +6,71 @@ contacts:
   - title: "E-mail"
     link: "mailto:william.k.kuo@gmail.com"
   - title: "Resume"
+    link: "https://docs.google.com/document/d/14rVpLBgxzGCPzOlX8JH8fHIdf5J6YBDj7d7p-gLbj7Y/export?format=pdf"
 
 sections:
+  - section: Projects
+    blocks:
+      - title: Custom Google Sheets Sidebar
+        subtitle: Google Apps Script, HTML
+        link: https://gist.github.com/kuo-w/4e02cc364e8e4a083da8b14add423384
+        description:
+          - Extends functionality of a Google Sheet used to track expenses.
+      - title: Personal Site
+        subtitle: Pre-rendered React App
+        link: "https://github.com/kuo-w/kuo-w.github.io"
+        description:
+          - Initially written in jQuery and then in React.
+          - React-snap is used to pre-render the site into static HTML.
+      - title: Journal
+        subtitle: React Native App
+        link: "https://github.com/kuo-w/Jot"
+        description:
+          - A journaling mobile application.
+          - Bootstrapped with `Create React Native App`.
+      - title: Order Checker
+        subtitle: Web Crawler Cron
+        link: "https://github.com/kuo-w/OLKB-Order-Checker"
+        description:
+          - CRON deployed to Google Cloud Scheduler that calls Google Cloud Function.
+          - The function scrapes a webpage and text messages the result using Twilio.
+      - title: Rebalancer
+        subtitle: Stock portfolio rebalancing utility
+        link: "https://github.com/kuo-w/rebalancer"
+        description:
+          - Asset allocation can be maintained by having a certain percentage of an asset in a portfolio.
+          - The project takes in user input to calculate the necessary changes (buy/sell) to return to correct allocations.
   - section: About Me
     blocks:
       - title: Education
         description:
-          - Ryerson University Computer Science Co-op.
-          - Graduating April 2020.
+          - Bsc. Computer Science Co-op
+          - Graduated from Ryerson University April 2020
       - title: Technical
         description:
           - "Languages: Javascript, Ruby, Python, Golang, C, Java, SQL"
-          - "Libraries/Frameworks: Rails, Django, React (+Native), Vue.js, jQuery"
           - "Tools: Git, AWS, GCP, Docker, Elasticsearch, Node.js, Bash, Linux"
+          - "Libraries/Frameworks: Rails, Django, React (+Native), Vue.js, jQuery"
   - section: Experience
     blocks:
-      - title: Blackberry
+      - title: BlackBerry
         subtitle: Software Development Student
         link: "https://www.blackberry.com/ca/en"
-        semesters:
-          - W2019
-          - S2019
+        start: Jan 2019
+        end: May 2020
         description:
-          - Ruby on Rails, Javascript, Elasticsearch, Redis
+          - Rails, Javascript, Golang, Elasticsearch, Redis
       - title: Shopper Army
         subtitle: Full-stack Web Developer
         link: "https://www.shopperarmy.ca/"
-        semesters:
-          - S2018
-          - F2018
+        start: May 2018
+        end: Dec 2018
         description:
           - Vue.js, Django, Webpack, GCP
-      - title: Partech Inc.
+      - title: ParTech
         subtitle: Full-stack Software Developer
         link: "https://www.partech.com/"
-        semesters:
-          - S2017
-          - F2017
-          - W2018
+        start: May 2017
+        end: Apr 2018
         description:
-          - Dropwizard (Java), AWS, Jenkins, AngularJs
-  - section: Projects
-    blocks:
-      - title: Personal Site
-        subtitle: Pre-rendered React Site
-        link: "https://github.com/kuo-w/kuo-w.github.io"
-        semesters:
-          - S2019
-        description:
-          - Initially written in jQuery and then with React.
-          - >
-            React-snap is used to pre-render the site so the client
-            doesn't wait for React to render.
-      - title: Journal
-        subtitle: React Native App
-        link: "https://github.com/kuo-w/Jot"
-        semesters:
-          - S2018
-        description:
-          - A journaling mobile application.
-          - Bootstrapped with `Create React Native App`.
-          - Added navigation, gesture handling, and local storage as database.
-      - title: Order Checker
-        subtitle: Web Crawler Cron
-        link: "https://github.com/kuo-w/OLKB-Order-Checker"
-        semesters:
-          - S2018
-        description:
-          - >
-            I purchased an item which enqueued me in a shipment queue, 
-            of which the expected shipment was months out.
-          - Luckily, the business owner published the shipment queue on a webpage.
-          - I deployed a CRON on Google Cloud Functions which crawled the webpage daily and looked for my particular order.
-          - Using Twilio, I then sent a text to my phone reporting my position in queue.
+          - Dropwizard (Java), AWS, Jenkins, AngularJS

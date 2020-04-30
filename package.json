@@ -4,11 +4,21 @@
   "description": "Portfolio site",
   "main": "index.html",
   "scripts": {
+    "prebuild": "rimraf dist",
     "build": "parcel build index.html --public-url ./",
+    "postbuild": "react-snap && copyfiles README.md dist",
     "dev": "parcel index.html",
     "watch": "parcel watch index.html",
-    "postbuild": "react-snap",
-    "deploy": "gh-pages -b master -d dist"
+    "deploy": "gh-pages -b master -d dist",
+    "cp-readme": "cp README.md dist/"
+  },
+  "reactSnap": {
+    "source": "dist",
+    "minifyHtml": {
+      "collapseWhitespace": false,
+      "removeComments": false
+    },
+    "skipThirdPartyRequests": true
   },
   "repository": {
     "type": "git",
@@ -28,24 +38,18 @@
     "js-yaml": "^3.13.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-slidedown": "^2.4.1",
     "react-snap": "^1.23.0",
     "react-transition-group": "^4.1.0"
   },
   "devDependencies": {
     "@babel/core": "^7.4.5",
     "@babel/preset-react": "^7.0.0",
+    "copyfiles": "^2.2.0",
+    "eslint": "^6.8.0",
+    "eslint-plugin-react": "^7.19.0",
     "gh-pages": "^2.0.1",
-    "parcel-bundler": "^1.12.3",
-    "parcel-plugin-clean-dist": "0.0.6",
-    "sass": "^1.17.0"
-  },
-  "reactSnap": {
-    "source": "dist",
-    "minifyHtml": {
-      "collapseWhitespace": false,
-      "removeComments": false
-    },
-    "skipThirdPartyRequests": true
+    "parcel-bundler": "^1.12.4",
+    "rimraf": "^3.0.2",
+    "sass": "^1.26.5"
   }
 }
