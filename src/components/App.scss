@@ -1,12 +1,11 @@
 @import "../variables.scss";
 
 .App {
-  margin-top: 5%;
-  padding: 0 20% 10% 20%;
+  padding: 5% 10% 5% 10%;
 
   @media #{$medium} {
     font-size: 16px;
-    padding: 0 10% 10% 10%;
+    padding: 5% 5% 5% 5%;
   }
 }
 
@@ -15,5 +14,7 @@
 }
 
 .App-sections {
-  max-width: 900px;
+  @media #{$large} {
+    display: flex;
+  }
 }

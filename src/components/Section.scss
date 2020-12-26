@@ -1,35 +1,24 @@
 @import "../variables.scss";
 
 .Section {
-  margin-bottom: 20px;
+  padding-bottom: 40px;
 }
 
 .Section-content {
   font-size: 1rem;
-  padding: 50px 80px;
+  padding: 0px 0px;
   background: var(--grey-light);
-
-  @media #{$small} {
-    padding: 10px 20px;
-  }
 }
 
 .Section-title {
-  color: var(--font-clr-lighter);
-  margin-bottom: 20px;
-}
-
-.Block-subtitle {
-  margin-bottom: 10px;
+  color: #333;
+  margin-bottom: 4px;
+  font-weight: bold;
+  font-size: 1.4em;
 }
 
 .Block:not(:last-child) {
   margin-bottom: 20px;
-}
-
-.Block-dates {
-  font-size: 0.6em;
-  opacity: 50%;
 }
 
 .Block-header {
@@ -43,6 +32,16 @@
   margin-right: 12px;
 }
 
+.Block-dates {
+  font-size: 0.6em;
+  opacity: 0.5;
+}
+
+.Block-subtitle {
+  font-size: 1em;
+  color: var(--font-clr-lighter);
+}
+
 .Block-description {
-  margin: 10px 0;
+  line-height: 1.5;
 }

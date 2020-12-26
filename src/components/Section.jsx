@@ -45,16 +45,19 @@ const Section = (props) => {
   return (
     <>
       {data && (
-        <div className="Section">
+        <div
+          className="Section"
+          style={data.width ? { minWidth: data.width } : {}}
+        >
           <div className="Section-content">
-            <h3 className="Section-title">{data.section}</h3>
+            <h2 className="Section-title">{data.section}</h2>
             {data.blocks.map((b, i) => {
               return (
                 <div className="Block" key={i}>
-                  <h2 className="Block-header">
+                  <h3 className="Block-header">
                     {Title(b)}
                     {Dates(b)}
-                  </h2>
+                  </h3>
                   <h4 className="Block-subtitle">{b.subtitle}</h4>
                   {b.description &&
                     b.description.map((d, i) => {
