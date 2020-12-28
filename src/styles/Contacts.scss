@@ -1,0 +1,11 @@
+@import "/src/styles/variables.scss";
+
+.Contacts {
+    font-size: 1.1rem;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.Contacts__Item {
+    margin-right: 18px;
+}

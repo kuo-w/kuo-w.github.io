@@ -1,0 +1,19 @@
+@import "/src/styles/variables.scss";
+
+.Section {
+    font-size: 1rem;
+    background: var(--grey-light);
+    margin-bottom: 20px;
+    min-width: 450px;
+
+    @media #{$small} {
+        min-width: auto;
+    }
+}
+
+.Section__Title {
+    color: #333;
+    margin-bottom: 4px;
+    font-weight: bold;
+    font-size: 1.4em;
+}

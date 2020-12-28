@@ -1,0 +1,30 @@
+@import "/src/styles/variables.scss";
+
+.SectionContent:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.SectionContent__TimeRange {
+    font-size: 0.6em;
+    opacity: 0.5;
+}
+
+.SectionContent__Header {
+    @media #{$medium} {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.SectionContent__Title {
+    margin-right: 12px;
+}
+
+.SectionContent__Subtitle {
+    font-size: 1em;
+    color: var(--font-clr-lighter);
+}
+
+.SectionContent__Paragraph {
+    line-height: 1.5;
+}

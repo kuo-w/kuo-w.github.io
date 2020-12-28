@@ -1,28 +1,27 @@
 import React from "react";
-import "./App.scss";
+import "/src/styles/App.scss";
 import { DATA } from "../data.js";
 
-import Section from "./Section";
-import Contacts from "./Contacts";
+import Section from "/src/components/Section";
+import Contacts from "/src/components/Contacts";
 
-const sectionsData = DATA.sections;
-const contactsData = DATA.contacts;
+const sections = DATA.sections;
+const contacts = DATA.contacts;
 
 const App = () => {
-  return (
-    <div className="App">
-      <h1>William Kuo</h1>
-      <div className="App-contacts">
-        <Contacts data={contactsData} />
-      </div>
-      <div className="App-sections">
-        {sectionsData &&
-          sectionsData.map((data) => (
-            <Section key={data.section} data={data} />
-          ))}
-      </div>
-    </div>
-  );
+    return (
+        <div className="App">
+            <h1>William Kuo</h1>
+            <div className="App__Contacts">
+                <Contacts data={contacts} />
+            </div>
+            <div className="App__Sections">
+                {sections.map((data) => (
+                    <Section key={data.section} data={data} />
+                ))}
+            </div>
+        </div>
+    );
 };
 
 export default App;

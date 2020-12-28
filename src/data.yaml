@@ -1,0 +1,69 @@
+contacts:
+    - title: GitHub
+      link: "https://github.com/kuo-w"
+    - title: LinkedIn
+      link: "https://www.linkedin.com/in/william-kuo/"
+    - title: "E-mail"
+      link: "mailto:william.k.kuo@gmail.com"
+sections:
+    - section: Experience
+      content:
+          - title: Laserfiche
+            subtitle: Software Engineer
+            link: "https://www.laserfiche.com/"
+            start: Aug 2020
+            end: present
+            description:
+                - C#, .NET Core, PostgreSQL.
+          - title: BlackBerry
+            subtitle: Software Development Student
+            link: "https://www.blackberry.com/ca/en"
+            start: Jan 2019
+            end: May 2020
+            description:
+                - Ruby, Rails, Golang, Elasticsearch, Redis.
+          - title: Shopper Army
+            subtitle: Full-stack Web Developer
+            link: "https://www.shopperarmy.ca/"
+            start: May 2018
+            end: Dec 2018
+            description:
+                - Python, Vue, Django.
+          - title: ParTech
+            subtitle: Full-stack Software Developer
+            link: "https://www.partech.com/"
+            start: May 2017
+            end: Apr 2018
+            description:
+                - Java, Dropwizard, AngularJS.
+    - section: Projects
+      content:
+          - title: Journal
+            subtitle: React Native, TypeScript, Firebase
+            link: "https://github.com/kuo-w/Jot"
+            description:
+                - Cloud syncing journal entry app.
+                - Uses Firebase authentication and NoSQL database from Firestore.
+          - title: This Website
+            subtitle: React
+            link: "https://github.com/kuo-w/kuo-w.github.io"
+            description:
+                - Serves static HTML from a pre-rendered React app.
+                - YAML file used as content management.
+          - title: Order Checker
+            subtitle: Serverless
+            link: "https://github.com/kuo-w/OLKB-Order-Checker"
+            description:
+                - Daily CRON job that called a cloud function.
+                - It scraped a webpage then texted the result.
+          - title: Custom Google Sheets Utility
+            subtitle: JavaScript
+            link: https://gist.github.com/kuo-w/4e02cc364e8e4a083da8b14add423384
+            description:
+                - Adds a custom menu item to Google Sheets.
+                - Makes manual data entry quicker using autocomplete and chronological insert.
+          - title: Rebalancer
+            subtitle: Vue
+            link: "https://github.com/kuo-w/rebalancer"
+            description:
+                - Helps rebalance an equity portfolio.
