@@ -8,7 +8,7 @@ I wanted something minimal and concise to convey my technical experiences.
 
 React gives the flexibility of components. Pre-rendering makes the distributed content just HTML. I don't need interactivity so it keeps things fast to load.
 
-Note that the `develop` branch contains the actual source code. The `master branch` is just for distribution.
+Note that the `develop` branch contains the actual source code. The `master` branch is just for distribution.
 
 ## Getting Started
 
